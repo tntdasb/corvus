@@ -3,7 +3,7 @@
 <head>
     <style>
         body{
-            background-image:linear-gradient(to bottom right, darkblue, purple);
+            background:linear-gradient(to bottom right, darkblue, purple);
         }
 
         *{
@@ -20,7 +20,7 @@
             position: relative;
         }
         .topContainer{
-            background: url(images/crow.jpg);
+            background: url(https://tntdasb.github.io/corvus/images/CrowAndRaven.png);
             background-position: center;
             background-size: cover;
             position: sticky;
@@ -128,9 +128,9 @@
             <div class="banner">Fiction</div>
         </a>
         <div class="middleContainer">
-            <div class="titleContainer">
+            <div class="titleContainer" data-c="-1">
                 <div class="title">The Bizarre Adventure of American Crow and Common Raven</div>
-                <div class="subtitle">The background will change if you <b>click</b> on different chapters!<br><del>And clicking the top picture sends you to the top.</del>(Unfortunately, anchor links are not working when this is embed in google sites)</div>
+                <div class="subtitle">The background will change if you <b>click</b> on different chapters!<br>And clicking the top picture sends you to the top.</div>
             </div>
             <nav class="indexContainer">
                 <a href="#零" class="index" data-c="0">N: Shots in the Autumn Morning</a>
@@ -324,10 +324,26 @@
     </div>
 </body>
 <script>
-    eIndex=document.body.querySelectorAll(".index")
-    console.log(eIndex)
+    eTopContainer=document.body.querySelector(".topContainer");
+    eTitleContainer=document.body.querySelector(".titleContainer");
+    eTitleContainer.addEventListener("click",(event)=>{change(eTitleContainer)});
+    leIndex=document.body.querySelectorAll(".index");
+    for (let i=0; i<leIndex.length; i++){
+        leIndex[i].addEventListener("click",(event)=>{change(leIndex[i])});
+    }
+    leChapter=document.body.querySelectorAll(".chapter");
+    for (let i=0; i<leChapter.length; i++){
+        leChapter[i].addEventListener("click",(event)=>{change(leChapter[i])});
+    }
+    dic={"-1":["CrowAndRaven.png","linear-gradient(to bottom right, darkblue, purple)"],"0":["shotgun.jpg","linear-gradient(to bottom right, green, brown"],"1":["tfc.jpg","linear-gradient(to bottom right, yellow, red)"],"2":["doctors.jpg","linear-gradient(to bottom right, black, olive)"],"3":["valhalla.png","linear-gradient(to bottom right, white, gray)"],"4":["changan.png","linear-gradient(to bottom right, orange, pink)"],"5":["mrg.png","linear-gradient(to bottom right, black, red)"],"6":["rm.jpg","linear-gradient(to bottom right, burlywood, black)"],"7":["back.jpg","linear-gradient(to bottom right, lightblue, green)"]}
     function change(t){
-        const key=t.dataset.c
+        console.log(t);//
+        let key=t.dataset.c;
+        let data=dic[key];
+        console.log(data);//
+        let u=data[0]; let b=data[1];
+        eTopContainer.style.backgroundImage="url(https://tntdasb.github.io/corvus/images/"+u+")";
+        document.body.style.background=b;
     }
 </script>
 </html>
