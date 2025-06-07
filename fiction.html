@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            background-image:linear-gradient(to bottom right, darkblue, purple);
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+
+        .mainContainer{
+            display:flex;
+            flex-direction:column;
+
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 110%;
+            text-align: center;
+            position: relative;
+        }
+        .topContainer{
+            background: url(https://cdn.download.ams.birds.cornell.edu/api/v2/asset/38263061/1800);
+            background-position: center;
+            background-size: cover;
+            position: sticky;
+            top:-50vh;
+            color:black;
+            text-decoration: none; 
+        }
+        .topContainer .banner{
+            margin:30vh 0;
+            font-size:300%;
+            font-weight: bold;
+            text-shadow: -2px -2px 7px gold, 2px 2px 7px red;     
+        }
+        .topContainer .banner:hover{
+            text-shadow: -2px 2px 14px gold, 2px -2px 14px red;
+
+        }
+        .middleContainer{
+            margin:2%;
+            background-color:rgba(255,255,255,0.5);
+            border-radius:10vh;
+            padding:2%;
+
+            display:flex;
+            flex-direction: column;
+        }
+        .middleContainer .titleContainer .title{
+            font-size: 200%;
+            color:darkblue;
+        }
+        .middleContainer .titleContainer .title:hover{
+            text-shadow: 0 0 7px white;
+        }
+        .middleContainer .titleContainer .subtitle{
+            font-size: 125%;
+            text-decoration: underline;
+        }
+        .middleContainer .indexContainer{
+            margin:1%;
+            background-color:rgba(255,255,255,0.5);
+            padding:1%;
+            font-size:110%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .middleContainer .indexContainer .index{
+            color:black;
+            font-weight:bold;
+            text-decoration: none;
+            border:1px solid black;
+            margin:0.5%;
+            padding: 0.5%;
+        }
+        .middleContainer .indexContainer .index:hover{
+            color:red;
+            border:1px solid darkred;
+            text-decoration: underline;
+        }
+        .middleContainer .storyContainer{
+            display:flex;
+            flex-direction: column;
+            gap:1em;
+            border-radius: 5vh;
+            padding:2%;
+            background-image:linear-gradient(to bottom right, yellow, goldenrod);
+        }
+        .middleContainer .storyContainer .chapter{
+            border:2px solid rgba(0,0,0,0);
+            display: flex;
+            flex-direction: column;
+            padding:2vh;
+        }
+        .middleContainer .storyContainer .chapter:hover{
+            border: 2px dotted red;
+            border-radius: 5vh;
+        }
+        .middleContainer .storyContainer .chapter .title{
+            align-self: flex-start;
+            font-size: 125%;
+            color:darkblue;
+            font-weight: bold;
+        }
+        .middleContainer .storyContainer .chapter .content{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .middleContainer .storyContainer .chapter .content p{
+            background-color: rgba(245, 230, 255,75%);
+            border-radius: 10%;
+        }
+        .middleContainer .storyContainer .chapter .content p.dialogue{
+            background-color: rgba(245, 230, 205, 75%);
+            font-size: 110%;
+            font-style: italic;
+            align-self: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="mainContainer" id="top">
+        <a class="topContainer" href="#top">
+            <div class="banner">Fiction</div>
+        </a>
+        <div class="middleContainer">
+            <div class="titleContainer">
+                <div class="title">The Bizarre Adventure of American Crow and Common Raven</div>
+                <div class="subtitle">The background will change if you <b>click</b> on different chapters!<br><del>And clicking the top picture sends you to the top.</del>(Unfortunately, anchor links are not working when this is embed in google sites)</div>
+            </div>
+            <nav class="indexContainer">
+                <a href="#零" class="index" data-c="0">N: Shots in the Autumn Morning</a>
+                <a href="#一" class="index" data-c="1">I:「三足金烏，其十有一」(The Eleventh Three-legged Crow)</a>
+                <a href="#二" class="index" data-c="2">II: Plague Doctors</a>
+                <a href="#三" class="index" data-c="3">III: ᚠᚨᚾᛏᚨᛋᛁᚾᚾ(Fantasinn)</a>
+                <a href="#四" class="index" data-c="4">IV:「烏鴉反哺」(Crow's Repay Feeding)</a>
+                <a href="#五" class="index" data-c="5">V: Mórrígan</a>
+                <a href="#六" class="index" data-c="6">VI: The Raven and the First Men</a>
+                <a href="#七" class="index" data-c="7">VII: Home</a>
+
+            </nav>
+            <div class="storyContainer">
+                <div class="chapter" id="零" data-c="0">
+                    <div class="title">N: Shots in the Autumn Morning</div>
+                    <div class="content">
+                        <p>It is a beautiful autumn morning, in eastern North America. The air is cool and fresh, the tree leaves are turning yellow. There are not yet many sounds made by cars on the street,  just the occasional sound of an engine starting from a distance. </p>
+                        <p>A raven, silently, landed on a green garbage bin next to a house. It looks around left and right, then flips the lid of the bin with its beak, causing a short sound of the bin lid hitting the bin wall. It then pecks through the garbage bag and rummages around inside. It soon picks out a piece of kitchen paper stained with fat. Just as it rips the oiled portion out, a shrill polyphony suddenly intrudes. </p>
+                        <p class="dialogue">"Awwww! Awwww!" A flock of crows are landing on the roof. </p>
+                        <p>For them, the raven violated their territory. They continue to caw for a while, and then one of the crows swoops right down to peck at the raven's tail feathers. The raven dodges.</p>
+                        <p>However, what is happening this morning is not only about birds.</p>
+                        <p class="dialogue">“Shut the * up!!!”</p>
+                        <p>A man with an angry face walked onto the balcony in his shorts and tank top, aiming the double-barreled shotgun in his hand at the direction of the garbage bin.</p>
+                        <p>The crow and raven on the garbage bin take off at once, but both fall in turn after two gunshots. And the crows on the roof all flee.</p>
+                        <p class="dialogue">“ * , you're even * around with my garbage bin!” The man then steps back into the room.</p>
+                        <p>A larger and a smaller black bird, both with countless holes, are lying on the grass, with ventral sides up. </p>
+                        <p>But this is not the end of the story. Their corpses suddenly disappear, leaving the tiny metal balls from the bird shots scattered in the grass.</p>
+                        <p>In order to keep it simple, I will call the protagonist crow “C”, and the protagonist raven “R”.</p>
+                    </div>
+                
+                </div>
+                <div class="chapter" id="一" data-c="1">
+                    <div class="title">I:「三足金烏，其十有一」(The Eleventh Three-legged Crow)</div>
+                    <div class="content">
+                        <p>The air is extremely hot and smells burnt. </p>
+                        <p>R wakes up on the hot, arid, cracked ground. The heat is so intense that it instinctively takes off to get away from the ground and opens its mouth to dissipate the heat, and would have removed its coat of plumage if it could.</p>
+                        <p class="dialogue">“Didn't I die? How did I get to this freaking place?” R is suddenly surprised that it has gained language abilities as it says this.</p>
+                        <p>Looking up into the sky, R is shocked—there are 11 suns in the sky. And as it looks detailly into the suns, there is surprisingly a gold-colored three-legged crow in the center of each sun.</p>
+                        <p>C, is now one of the three-legged crows.</p>
+                        <p class="dialogue">“Why can't I get out of this ball?” C is anxiously twisting in its sun, not even realizing that it can talk, but is still captured.</p>
+                        <p>From the horizon, a strong man wearing beast skin is approaching with an arrow bag on back and an incredibly thick bow in hand. His name is “后羿(Hou Yi)”. His original goal is to shoot 9 suns down, keeping only one, so that all creatures would be saved from the extreme heat. However, because of the unexpected join of C, now he has to shoot 10 suns down. Soon the first sun is shot down. The shape of the sun disappears and a crow with charred feathers falls to the ground.</p>
+                        <p class="dialogue">“What??? How there're more shootings? Shotgun first, then bow?”</p>
+                        <p>C watches as the suns around it fall, one by one, hit by arrows. And C is actually lucky enough to be one of the last two suns.</p>
+                        <p class="dialogue">“You are not going to shoot all suns down, right? Otherwise nothing can grow on earth, as well. Just shoot that guy, don't shoot me, alright?!”</p>
+                        <p>Hou Yi can't hear what C says. Anyway, in C's perspective, Hou Yi slowly pointed his bow at it.</p>
+                        <p>Unwilling to wait for death, C dives downward as fast as it can, bringing the sun crashing to the ground with it. The sun explodes. A wave of heat sweeps across the ground. Hou Yi and R both get engulfed.</p>
+                    </div>
+                </div>
+                <div class="chapter" id="二" data-c="2">
+                    <div class="title">II: Plague Doctors</div>
+                    <div class="content">
+                        <p>The air is filled with stench and smoke.</p>
+                        <p>C finds itself with an extraordinarily high point of view when it stands on the ground. It tries to take off, but fails, because it no longer has feathers. Instead, it has leather gloves, a black cloak, heavy boots, and a suitcase. C is in a body in human form. And most of all, it is the beak shaped mask worn on its face that concerns it the most. This mask is embedded in the flesh and cannot be removed no matter what. C can only look around first.</p>
+                        <p>The sky is very cloudy, and a medieval deteriorated town is around. There is little vitality in the streets. C picks a random direction to walk in, only to be greeted by human corpses slightly covered by rags cluttering the road. The scent of the corpses would have smelled good to C, but presumably since it is currently in a human's body, it feels nauseous instead. Around some of the corpses, there are ravens and crows having meals.</p>
+                        <p class="dialogue">“Awwwww! Awwwww!” C approaches and talks to the birds.</p>
+                        <p>The birds behave like they hear nothing, and fly away as C gets close enough to them. C looks in other directions in disappointment, and finds a “person” with a similar suit as it is waving at it.</p>
+                        <p class="dialogue">“You're the crow that interrupted my garbage bin treasure hunt and then crashed as a sun, right?”</p>
+                        <p>The “person” waving is R. It is larger than C, and has a similar costume, but the “beak” on its mask is thicker and longer. It also has a gentleman's walking stick in its hand, which makes it look very dashing. </p>
+                        <p class="dialogue">“So you are the one who touched my garbage bin? You wanna me to peck you?”</p>
+                        <p class="dialogue">“Your garbage bin? It's nothing if I don't open it. I've never seen any crow opened that~”</p>
+                        <p>Just as the two are exchanging curses, a man with tattered clothes, a hard look on his face, and a gasping breath runs up to them and knees directly on the rocky ground.</p>
+                        <p class="dialogue">“Doctor, please save my wife! I can do anything.”</p>
+                        <p>The two “doctors” crouch(usually preparing for taking off when noticing possible hazards) then stand up, hesitating.</p>
+                        <p class="dialogue">“Please! Just do something. At least tell me what medicines to take.”</p>
+                        <p>The “doctors” look at each other, then follow the man.</p>
+                        <p>The man enters a dilapidated house. C follows while R stands just inside the door. </p>
+                        <p class="dialogue">“What are you gonna do? We are just birds.”, R whispers.</p>
+                        <p>There's really not many things in the room. But there's a rat on the ground scurrying past C's eyes. On the decaying bed lay the woman with a pale face and now and then a terrible cough. It is the only sound that can be heard in the room. The two children who were sitting on the edge of the bed are signaled by the man to move away. They gaze at C with inscrutable innocent eyes. C is now glad that itself got a mask on its face.</p>
+                        <p>C tries to remember what it has seen human doctors do before. It pretends to check breathing and pulse. Then it opens its suitcase and rummages through it. Then it just can't pretend anymore. After a moment of stalemate, C turns to the corner where the rat is hiding and kills it with a single hit, then picks it up.</p>       
+                        <p class="dialogue">“Just keep yourselves away from patients and rats. ”, C says this while rushing out with R as fast as it can.</p>
+                        <p>After running for a while, C finds a random bush and dumps the rat corpse.</p>
+                        <p class="dialogue">“It's impossible that you know how to heal. You just caused more trouble.”</p>
+                        <p class="dialogue">“At least I told them to get away from the source of infection. ” C says without much confidence.</p>
+                        <p>The two wander aimlessly through the dreary town before feeling lightheaded.</p>
+                        <p class="dialogue">“Were we infected by this disease because we've become human?”</p>
+                        <p>C and R become more and more disoriented and then both pass out.</p>
+                    </div>
+                </div>
+                <div class="chapter" id="三" data-c="3">
+                    <div class="title">III: ᚠᚨᚾᛏᚨᛋᛁᚾᚾ (Fantasinn)</div>
+                    <div class="content">
+                        <p>The air is pure and cold.</p>
+                        <p>R wakes up in a field of snow. It feels glad that it turns back into a bird. Its feathers are adjusted to fluff up, because of the cold air around it. It flies up, and spits out liquefied water vapor whenever it breathes.</p>
+                        <p>It's a steep mountain range. Everything is so pure and unsullied by biological activities. Cold winds constantly attack. There are countless sharp rocks underneath the layer of snow, and some of the areas are too steep for snow to accumulate, leaving the rock walls exposed. The overall appearance is like a white cotton cloth that has been cut countless openings by sharp blades.</p>
+                        <p class="dialogue">“千山鳥飛絕，萬徑人蹤滅。(From hill to hill no bird in flight; From path to path no man in sight.)”, a poem sentence suddenly appears in R’s mind.</p>
+                        <p class="dialogue">“What? I've never thought of this kind of stuff before.”</p>
+                        <p>Just as R lands on a giant rock to contemplate, two black figures fly over from the distance.</p>
+                        <p class="dialogue">“Fantasinn. I believe you've experienced what you're capable of.”</p>
+                        <p class="dialogue">“Pardon?”</p>
+                        <p class="dialogue">“I'm Huginn. I stand for thought.”</p>
+                        <p class="dialogue">“I'm Muninn. I stand for memory .”</p>
+                        <p class="dialogue">“As ravens, why do you have to stand for something?”</p>
+                        <p class="dialogue">“You are Fantasinn. Your ability is fantasizing. Odin is waiting for you. Just come with us. ”</p>
+                        <p>R is about to refuse, but at the same time, a lot more poems, music and visual arts appear in its mind.</p>
+                        <p class="dialogue">“OK. I'm curious.”</p>
+                        <p>Valhǫll, the hall governed by Odin, is placed at the end of the snowfield. The hall is not greatly ornate, but it is extraordinarily majestic. Skeletons of prey and banners of warriors are hung between the wild walls of stone. Flames are burning in several huge circular fire pits, projecting the shadows of the souls of the dead drinking and singing around the long tables. Also on one of the long tables, there is a familiar black shape.</p>
+                        <p class="dialogue">"It's a loss that you didn't come earlier. There's an endless supply of food here." C says as it is tearing the venison apart.</p>
+                        <p>R turns its gaze to the end of the hall. There is a pedestal holding Gungnir, and a throne. On that mighty throne sits Odin, with both wisdom and ferocity radiating out of his single eye. He sets his sight on R and speaks.</p>
+                        <p class="dialogue">“The world is getting old. Memory has helped me recognize the world; Thought has helped me understand the world. However, at this point, only fantasies can significantly bring things forward.”</p>
+                        <p class="dialogue">Odin gradually stands: “You are named Fantasinn, because you bring the fire of fantasies. Are you willing to, for me, observe the realms and awaken the sleeping poetry of all things?”</p>
+                        <p>R feels a strong pressure. But it just can't resist Odin's strong presence.</p>
+                        <p class="dialogue">“I…accept.”</p>
+                        <p>R begins working under Odin. It flies around the world side by side with Huginn and Muninn, seeing the joys and sorrows of the world, giving even the non-living things fantastic concepts associated with themselves.</p>
+                        <p>R gets so engrossed in his work that it almost forgets about C. C doesn't get out much due to the cold weather outside. It spends its days wandering the halls, eating, and chatting with the ghosts. When the three ravens are off duty, C listens to them silently as they give their reports to Odin. C feels like it is living like a ghost itself.</p>
+                        <p>One day, C sees that R has left work early and is standing by Gungnir. At this time Odin is not there.</p>
+                        <p class="dialogue">“What's wrong with you today?” C says. It's been a long time since it's last speech to R.</p>
+                        <p class="dialogue">"I've seen the world and derived a great deal of it with my powerful fantasy abilities. However, this is ultimately a job I'm doing for someone else. What I think of myself is in the end just fantasy, and will only appear cheaply and fade away cheaply. Today, I saw a group of teenage girls who are moving forward in spite of their confusion, determined to form a band for the rest of their lives. This is what it means to truly write your own story. "</p>
+                        <p>R crouches and jumps, skewers himself onto Gungnir, and disappears.</p>
+                        <p class="dialogue">“Why are you in such a hurry?” C's mind is clueless, while slightly excitedly muttering to itself.</p>
+                        <p>C hurriedly flies to the long table, stuffs a chunk of meat into its crop, and bids the ghosts goodbye. It also bumps into Gungnir.</p>
+                    </div>
+                </div>
+                <div class="chapter" id="四" data-c="4">
+                    <div class="title">IV:「烏鴉反哺」(Crow's Repay Feeding)</div>
+                    <div class="content">
+                        <p>There is a floral scent in the air.</p>
+                        <p>C and R appear in the same tree in 长安(Chang'an) city, which is the capital of Western Han Dynasty. It's spring here and everything is lively. The relatively soft sunshine and warm spring winds make them forget the harshness of northern Europe. Looking around Chang'an City, there are wide streets, bustling markets, neat and elegant palaces, and beautiful gardens. The rows of black tiles are enriched with a sense of civilization.</p>
+                        <p class="dialogue">“Ha! Ha! I still have that meat in my crop.”</p>
+                        <p class="dialogue">"So you brought this before you left? I didn't even get to eat today. Can you share some with me?" R says half-jokingly.</p>
+                        <p>C gives R a disgusted look and turns its head back. But when it starts to swallow the meat, it hesitates.</p>
+                        <p class="dialogue">“All I did every day in Valhǫll was eating. Whereas the raven was always working…”, C thinks like this in its own mind.</p>
+                        <p class="dialogue">“Well, well, well, here you go, here you go. It's thanks to you that I can stay in that cafeteria~” C spits the meat out on the branch. </p>
+                        <p class="dialogue">“Really? Don't regret.” R looks at C's reaction and quickly engulfs the meat.</p>
+                        <p>At that moment, a mother is walking on the road holding her child's hand.</p>
+                        <p class="dialogue">“Wow, did you see that! The crow did a repay feeding! The young crow takes meat in return for the parent who raised it.” the mother says.</p>
+                        <p>C and R are so speechless that they burst out laughing.</p>
+                        <p class="dialogue">“Not to mention that one of us is a crow and one of us is a raven, even if it is a young crow feeding an elder, I've never heard of it. Perhaps the reason people are so misinformed is because the subadult crows may look bigger than the adults because of their fluffy feathers, and in reality it's the elder bird that feeds the younger bird, but people think it's the younger bird that feeds the elder bird. “ C says, then stops laughing and thinks of something.</p>
+                        <p class="dialogue">“It's a stupid statement, but it made me think of my family. What is happening to my wife and kids now?” C asks itself seriously.</p>
+                        <p class="dialogue">“I don't have a wife, unfortunately. But what you meant is we have to go home, right? Although I'm not sure if we will eventually be sent back if we die more times, the only option is keep going.”</p>
+                        <p class="dialogue">“Yes, I want to keep going, but not now.” C says with a mysterious smile.</p>
+                        <p>C takes off and leads R on a look around the city of Chang'an. Then C aims at the palace and poops on it.</p>
+                        <p class="dialogue">“Be careful not to get made into Chinese medicine.”</p>
+                        <p class="dialogue">" 'Crow meat' in Chinese medicine is large-billed crow(Corvus macrorhynchos) meat. I'm a short-billed crow(Corvus brachyrhynchos)."</p>
+                        <p>The two birds fly into the interior of the palace, then accelerate and crash into the pillars.</p>
+                    </div>
+                </div>
+                <div class="chapter" id="五" data-c="5">
+                    <div class="title">V: Mórrígan</div>
+                    <div class="content">
+                        <p>There is a smell of blood in the air.</p>
+                        <p>The sky is depressingly, the red of vein blood. R finds itself on a tent stained with mud in a barracks in intense preparation for war. The barracks is filled with dirty tents and somewhat tattered flags. Horns sound in the distance. Some of the soldiers are moving nervously, while others are making final preparations in place. </p>
+                        <p>R looks for C. It turns out that C is silently standing on a flagpole. Crows always look left and right or comb their feathers when they are staying somewhere. However, C is frozen on any action.</p>
+                        <p class="dialogue">“What are you looking at?” R flies by and asks.</p>
+                        <p>C is not responding.</p>
+                        <p>R circles C a few times, even tugging on C's feather, and C still doesn't respond.</p>
+                        <p class="dialogue">“It seems like the world is not a good place either.” R realizes the serious abnormality happening in the world.</p>
+                        <p>A few soldiers below are drinking and laughing at the same time, their movements are exaggerated, as if they are open to life and death. Suddenly, one of the soldiers picks up a rock on the ground and smashes it at C.</p>
+                        <p class="dialogue">“Hello~ Little bird~” All soldiers in that fellowship laugh again.</p>
+                        <p>C dodges the rocks extremely swiftly and takes off, keeping rising. Once it reaches a certain height, it begins to circle mechanically in a perfect circle.</p>   
+                        <p class="dialogue">“Are you possessed?” R also takes off and watches C.</p>
+                        <p>Then R sees a presence that gives it fear. On the fence at the end of the barracks stands a tall, red figure. She is dressed in red clothes, extending black feathers that seemed to be permeated with blood, with an unfathomable face, exuding an aura of death. R remembers the book about Celtic mythology it read when it was Fantasinn. She is Mórrígan, the goddess of death, prophecy, and war.</p>
+                        <p>It doesn't take long for the battle to begin. The enemy's sea of men has manifested itself. The soldiers in the barracks's side, including the group of drunk ones, all pick up their weapons and join their own formations. The trumpets sound even more deafening and thunderous than just now. All of a sudden, the ground begins to tremble, and roars rise and fall. Not long after, the sounds of clashing weapons also join the chaotic symphony. Countless battle axes, swords, and spears are being wielded.</p>
+                        <p>As the soldiers move, the center of the circle in which C is hovering changes too. And, as time goes on, the radius of the circle becomes smaller and smaller, and the height becomes lower and lower.</p>
+                        <p>The man who tried to stone C is about to raise his shield when he is cleaved by a battle axe. And C lands on his shoulder just like it already knows when he will die, at the exact moment he loses his vitals. C lets out a shrill caw, like derisions from hell.</p>
+                        <p class="dialogue">“So childish. I don't care if the man died or not, or if he was cursed to death by you or not. But it's hard for me to watch you behave in such a silly way and do nothing. ” R says so as it flies towards C.</p>
+                        <p class="dialogue">R grips the dagger from the soldier's corpse's waist and adds, “Seems like I have to force you to travel, for this time.”</p>
+                        <p>R plunges the dagger into C and then throws itself into the area of intense fighting.</p>
+                    </div>
+                </div>
+                <div class="chapter" id="六" data-c="6">
+                    <div class="title">VI: The Raven and the First Men</div>
+                    <div class="content">
+                        <p>There is a smell of wood and aromatics in the air, which smell fairly modern.</p>
+                        <p>C opened its eyes and found itself in a spacious rotunda. The spherical glass dome overhead spills soft morning light and casts patches of interlocking light and dark on the floor. Under C's claws, there is a large wood sculpture. It is about a raven standing on a shell with humans hidden inside. The room appears to be an exhibition hall. The interpretive sign around the sculpture reads, “The Raven and the First Men. In Haida Aboriginal mythology, the raven is both a trickster and a creator. It steals, cheats, and messes, but also creates the light of human civilization without intending to do so.”</p>
+                        <p>C feels as if it had a dream, but clearly remembers that it was R that saved it. It looks around, but can't find R. </p>
+                        <p class="dialogue">“Don't tell me that you became a sculpture. ”</p>
+                        <p>C wanders through the different rooms looking for R, but can't find it. It learns that the place is the Museum of Anthropology at UBC and that it is closed for the day, so no one is there. It finds one of the museum's computers, turns it on, and slowly maneuvers it with its beak and claws, checking the time and major historical events. C is amazed to realize that this is most likely the real world. It also checks the map and analyzes the way home, which is crossing North America to the east.</p>
+                        <p>C returns to the room where the sculpture is and its face becomes grave again.</p>
+                        <p class="dialogue">“The reason raven and I came all the way down here without stopping is for freedom, the freedom that truly belongs to a bird. Raven just saved me, and it would be really bad if I fly away and leave it behind this time. ”</p>
+                        <p>C makes a well thought out plan to save R. It discovers a ventilation duct leading directly from the outside world into the wooden sculpture exhibition room and tampers with the museum's security and fire-fighting systems. It takes advantage of the time every day when no one pays attention to pump some sanitary cottons from the washroom and hides them under the carpet near the wood sculpture.</p>
+                        <p>Finally, on a dark and windy night, C enters the wooden sculpture room from the ventilation duct with a lighter picked up on the road outside, and turns out all the hidden cottons and spreads them on the wooden sculpture.</p>
+                        <p class="dialogue">“Sorry, art. I know you are a national treasure. But a true raven is more important.”</p>
+                        <p>C uses a unique technique to light the lighter and ignite the cottons. After a while, heavy smoke billows out and the sculpture burns. The fire illuminates the entire room. Since it takes a long time to burn, C evacuates through the ventilation duct.</p>
+                        <p>The next day, a big pitch black bird burrows out of the pitch black ashes surrounded by a multitude of firefighters. R breaks through the people and rooms, and flies out of the main entrance.</p>
+                        <p>C greets it at the gate.</p>
+                        <p class="dialogue">“Wow~ You're so righteous!”</p>
+                        <p class="dialogue">“I was nervous watching above the glass dome just now. I wasn't sure if you'd travel away again after the sculpture burned or if you'd just be released here. If the reality is the former, there's no way of knowing how many more times you'll have to cross back into this world.”</p>
+                        <p class="dialogue">“The sky of the real world is so beautiful.”</p>
+                        <p class="dialogue">“So what are you waiting for? Let's just go home.”</p>
+                    </div>
+                </div>
+                <div class="chapter" id="七" data-c="7">
+                    <div class="title">VII: Home</div>
+                    <div class="content">
+                        <p>The crow and the raven fly together and make their way east, finally returning home. The crow is reunited with its family and urges everyone to be tolerant of the raven. While the raven starts to lead the flock of crows in opening the garbage bin lid.</p>
+                        <p class="dialogue">"The end. Awww!"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    eIndex=document.body.querySelectorAll(".index")
+    console.log(eIndex)
+    function change(t){
+        const key=t.dataset.c
+    }
+</script>
+</html>
